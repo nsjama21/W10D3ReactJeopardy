@@ -1,38 +1,71 @@
+/* * {
+  /* margin: 0;
+  padding: 0; */
+  /* background-color: #5a81a2; */
+/* } */ 
 .App {
+  height: 100vh;
+  width: 100vw;
   text-align: center;
+  background-color:#5a81a2 ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.welcome {
+  color:white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.score {
+  font-size: 30px;
+  font-weight: bold;
+  color:#e9d17a ;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.increase {
+  height: 5vh;
+  width: 5vw;
+  font-size: 10px;
+  color: black;
+  background-color: #6191b5;
 }
 
-.App-link {
-  color: #61dafb;
+.decrease {
+  height: 5vh;
+  width: 5vw;
+  font-size: 10px;
+  color: black;
+  background-color: #fe938c;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.reset {
+  height: 5vh;
+  width: 5vw;
+  font-size: 10px;
+  color: black;
+  background-color: #e71d37;
 }
+
+.getTrivia {
+  margin: 10px;
+  height: 5vh;
+  width: 5vw;
+  font-size: 10px;
+  color: black;
+  background-color: #e9d17a;
+}
+
+.getAnswer {
+  width: 15vw;
+  height: 10vh;
+  font-size: 30px;
+  color: black;
+  background-color: #1a2650;
+}
+
+.category {
+  color: #e9d17a;
+}
+
+.points {
+  color: #e9d17a;
+}
+

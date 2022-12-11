@@ -1,12 +1,15 @@
-
-export default function Answer({ answer }) {
+export default function AnswerButton({ answer, question, setQuestion }) {
   const loaded = () => {
+
+    const handleClick = () => {
+      setQuestion(answer.question)
+    }
 
     return (
       <>
-        <h1>{answer.answer}</h1>
-        <h1 className="category">Category: {answer.category.title}</h1>
-        <h1 className="points">Points: {answer.value}</h1>
+        <button className="getAnswer" onClick={handleClick}>Get Answer</button>
+
+        <h1>Question: {question} </h1>
 
         {/* answer.question is what you need to show your question/solution */}
       </>
@@ -17,3 +20,4 @@ export default function Answer({ answer }) {
   }// if true loaded if false loading
   return answer ? loaded() : loading()
 }
+

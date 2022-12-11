@@ -16,11 +16,11 @@ export default function Score() {
 
   return (
     <>
-      <span>Score: {count}</span>
+      <span className="score">Score: {count}</span>
       <section>
-        <button onClick={handleIncrement}>Increase</button>
-        <button onClick={handleDecrement}>Decrease</button>
-        <button onClick={handleReset}>Reset</button>
+        <button className="increase" onClick={handleIncrement}>Increase</button>
+        <button className="decrease" onClick={handleDecrement}>Decrease</button>
+        <button className="reset" onClick={handleReset}>Reset</button>
       </section>
     </>
   );
